@@ -3,6 +3,9 @@
 use strict;
 use warnings;
 
+use lib 't/lib';
+use MyTests;
+
 use Shell::Command;
 use Test::Most;
 

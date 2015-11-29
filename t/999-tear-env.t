@@ -1,4 +1,8 @@
 #!/usr/bin/perl
+use lib 't/lib';
+use lib 'lib';
+use MyTests;
+
 
 use strict;
 use warnings;

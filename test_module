@@ -1,0 +1,10 @@
+07:49:12 < mst> package MyTests; BEGIN { $ENV{LC_ALL} = 'C' } use Import::Into; sub import { strict->import::into(1); warnings->import::into(1); Test::More->import::into(1); }
+07:49:17 < mst> RichiH: ^^ MyTests.pm
+07:49:23 < mst> then your .t files all start
+07:49:26 < mst> use lib '
+07:49:29 < mst> use lib 't/lib';
+07:49:32 < mst> use MyTests;
+07:49:46 < mst> centralizes the boilerplate
+07:50:58 < mst> RichiH: I -think- that would work and be more elegant
+08:09:52 < mst> RichiH: did you get the sketched perl module before the netsplat
+

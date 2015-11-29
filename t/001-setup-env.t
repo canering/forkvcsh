@@ -3,6 +3,9 @@
 use strict;
 use warnings;
 
+use lib 't/lib';
+use MyTests;
+
 use Test::Most;
 
 system ("mkdir -p t/etc");
